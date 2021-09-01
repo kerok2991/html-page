@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(55, 61, 158);
+}
+
+header, footer, section, nav, li {
+    border: rgb(12, 158, 121) 1px solid;
+}
+
+header {
+    background-color: rgb(49, 50, 58);
+    color: hotpink;
+    text-align: center;
+}
+
+li {
+    display: inline;
+    padding: 10px;
+    margin: 0px 20px;
+}
+
+#section1 {
+    background-color: rgb(11, 54, 110);
+}
+
+#section2 {
+    background-color: rgb(39, 42, 204);
+}
+
+.center {
+    text-align: center;
+}
+
+footer {
+    background-color: azure;
+    text-align: center;
+}
+
+img {
+    width: 800px;
+}
