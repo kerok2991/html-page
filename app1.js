@@ -47,3 +47,29 @@ function userGuessingGame(correctAnswer){
         alert('Sorry, that answer is incorrect');
     }
 }
+
+function guessMansBestFriend(correctAnswer){
+    var userAnswer = prompt("Do you want to play a game? (yes or no)");
+    console.log(wannaPlay)
+    while (wannaPlay.toLowerCase() == 'yes'){
+        var numberOfAttempts = 2;
+        for(var i = 1; i <= numberOfAttempts; i++){
+            userAnswer = prompt("Who is mans best friend? (Dog man or tech)");
+
+            while((userAnswer == 'man') || (userAnswer == 'tech')){
+                userAnswer = prompt("Who is mans best friend? (Dog man or tech)")
+            }
+            if(userAnswer == 'dog'){
+                alert('You got it right ' + (numberOfAttempts - i) + ' attempts left');
+                break;
+            } else if(userAnswer < correctAnswer){
+                alert('Your answer is disappointing. Try again! ' + (numberOfAttempts - i) + ' attempts left');
+            }
+        }
+        wannaPlay = prompt('Do you want to play a game? (yes or no)');
+        if (wannaPlay == 'yes'){
+            correctAnswer = userGuessingGame();
+        }
+    }
+
+}
